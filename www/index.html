@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CSE 30151: Theory of Computing</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,300,100" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/theory.css">
+
+</head>
+
+<body>
+
+<div class="fullscreen" id="page1">
+<div class="overlay">
+<div class="titlebox">
+<h2>CSE 30151</h2>
+<h1>Theory of Computing</h1>
+</div>
+</div>
+</div>
+
+<a name="page2"></a>
+
+<div class="menuparent">
+<div class="menu">
+<ul><li><a href="#overview">Overview</a></li> 
+    <!-- <li><a href="#staff">Staff</a></li> -->
+    <li><a href="#requirements">Requirements</a></li> 
+    <li><a href="#schedule">Schedule</a></li> 
+    <li><a href="#project">Project</a></li> 
+    <li><a href="#policies">Policies</a></li></div>
+
+<div class="container">
+
+<a name="overview"></a>
+<h1>Overview</h1>
+
+<div class="row">
+
+<div class="six columns">
+
+<dl class="info">
+<dt>
+<dt>Term</dt><dd>Spring 2018</dd>
+<dt>Time</dt><dd>TTh 2&ndash;3:15pm</dd>
+<dt>Location</dt><dd>TBD</dd>
+<dt>Instructor</dt> <dd><a href="http://www.nd.edu/~dchiang">Dr. David Chiang</a></dd>
+</dl>
+
+<dl class="info"><dt>Prerequisites</dt> <dd><i>Discrete Mathematics</i> (CSE 20110) or equivalent. You especially need to be comfortable with sets, tuples, functions, relations, and graphs; and writing proofs by contradiction and by induction.</dd></dl>
+
+<dl class="info">
+<dt>Required text</dt> <dd>Michael Sipser's <em>Introduction to the Theory of Computation</em>, in either the 2nd or 3rd edition:
+
+<table class="invisible books">
+
+<tr><td><img src="images/sipser2.jpg"></td>
+<td>2nd Edition, 2005<br>
+ISBN: 0-534-95097-3<br>
+Links: 
+<a href="http://www.amazon.com/Introduction-Theory-Computation-Advanced-Topics/dp/0534950973">Amazon</a>
+<a href="http://math.mit.edu/~sipser/itoc-errs2.1.html">errata</a></td></tr>
+
+<tr><td><img src="images/sipser3.jpg"></td>
+<td>
+3rd Edition, 2012<br>
+ISBN: 1-133-18779-X<br>
+Links:
+<a href="http://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X">Amazon</a>
+<a href="http://www-math.mit.edu/~sipser/itoc-errs3.1.html">errata</a><br>
+On reserve in the Engineering Library.
+</td></tr>
+
+<tr><td><img src="images/sipser3i.jpg"></td>
+<td>
+3rd International Edition, 2012<br>
+ISBN: 1-133-18781-1<br>
+Links:
+<a href="http://www.amazon.com/Introduction-Theory-Computation-3rd-International/dp/B00RI4T3BS">Amazon</a>
+<a href="http://www-math.mit.edu/~sipser/itoc-errs3.1.html">errata</a><br>
+</td></tr>
+
+</table></dd>
+</dl>
+
+</div>
+
+<div class="six columns">
+
+<dl class="info"><dt>Description</dt> <dd>Introduction to formal languages and automata, computability theory, and complexity theory with the goal of developing understanding of the power and limits of different computational models. Topics covered include:
+</dd></dl>
+<ul><li>regular languages and finite automata</li> <li>context-free grammars and pushdown automata</li> <li>Turing machines; undecidable languages</li> <li>the classes P and NP; NP completeness</li></ul>
+
+<dl class="info">
+<dt>Links</dt>
+<dd>The following sites will be used in this course:
+</dd></dl>
+<ul>
+<li><a href="https://sakailogin.nd.edu/portal/site/SP18-CSE-30151-01">Sakai</a> for submitting assignments and receiving grades</li>
+<li><a href="https://piazza.com/nd/spring2018/cse30151">Piazza</a> for questions and answers</li>
+<li><a href="https://nd-cse.slack.com/messages/cse-30151-sp18/">Slack</a> for informal discussion</li>
+<li>Notes and assignments will be linked from here, but you can also clone the <a href="https://github.com/ND-CSE-30151/spring-2018">Github repository</a></li>
+</ul>
+
+</div>
+</div>
+
+<!-- <a name="staff"></a>
+<h1>Staff</h1>
+
+<div class="row">
+
+<div class="three columns staff">
+<img class="photo" src="images/chiang.png"><br>
+Instructor<br>
+<a href="http://www.nd.edu/~dchiang">David Chiang</a> (Notre Dame)<br>
+dchiang@nd.edu<br>
+T 3:30&ndash;5pm and Th 11:30&ndash;1, 326D Cushing
+</div>
+
+</div>  -->
+
+<a name="requirements"></a>
+<h1>Requirements</h1>
+
+<div class="row">
+<div class="six columns">
+
+<table class="u-full-width">
+<thead>
+<tr> <th>Component</th> <th>Points</th> </tr>
+</thead>
+<tbody>
+<tr> <td>Homework (HW)</td> <td>8 &times; 30</td> </tr>
+<tr> <td>Course project (CP)</td> <td>4 &times; 30</td> </tr>
+<tr> <td>Midterm exams (ME)</td> <td>2 &times; 60</td> </tr>
+<tr> <td>Final exam (FE)</td> <td>120</td> </tr>
+</tbody>
+<tfoot>
+<tr> <th>Total</th> <td>600</td> </tr>
+</tfoot>
+</table>
+</div>
+
+<div class="six columns">
+<table class="u-full-width">
+<thead>
+<tr><th>Letter grade</th><th width="80px">Points</th></tr>
+</thead>
+<tbody>
+<tr><td>A<br>A&minus;</td>        <td>560&ndash;600<br>540&ndash;559</td> </tr>
+<tr><td>B+<br>B<br>B&minus;</td>       <td>520&ndash;539<br>500&ndash;519<br>480&ndash;499</td> </tr>
+<tr><td>C+<br>C<br>C&minus;</td>       <td>460&ndash;479<br>440&ndash;459<br>420&ndash;439</td> </tr>
+<tr><td>D</td>        <td>360&ndash;419</td> </tr>
+<tr><td>F</td>        <td>0&ndash;359</td>   </tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<a name="schedule"></a>
+<h1>Schedule</h1>
+
+<div class="row" style="overflow-x: auto;">
+<div class="twelve columns">
+  <p>Notes are posted as Jupyter notebooks. If you want to fiddle with the examples, install <a href="https://github.com/ND-CSE-30151/tock">Tock</a>, clone the <a href="https://github.com/ND-CSE-30151/spring-2017">Git repository</a>, and run <code>jupyter notebook</code> in your working copy.</p>
+  
+  <p>Unless otherwise indicated, each assignment is due on Thursday at 11:55pm of the week in which it is listed.</p>
+
+  <p>The schedule below and linked notes and assignments are from Spring 2017; they will be updated for Spring 2018.</p>
+  
+<table class="schedule">
+<thead>
+<tr>
+  <th>Unit</th>
+  <th>Week of</th>
+  <th>Topic</th>
+  <th>Assignment Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td></td>
+  <td>01/17</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week01/week01.ipynb">Introduction and background</a></td>
+  <td></td>
+</tr>
+<tr class="unit">
+  <td rowspan="3">I</td>
+  <td>01/24</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week02/week02.ipynb">Finite automata</a></td>
+  <td><a href="../hw/hw1.pdf">HW1</a></td>
+</tr>
+<tr class="unit">
+  <td>01/31</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week03/week03.ipynb">Regular expressions</a></td>
+  <td><a href="../hw/hw2.pdf">HW2</a></td>
+</tr>
+<tr class="unit">
+  <td>02/07</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week04/week04.ipynb">Non-regular languages</a></td>
+  <td><a href="../hw/cp1.pdf">CP1</a></td>
+</tr>
+<tr>
+  <td></td>
+  <td>02/14</td>
+  <td><a href="../hw/me1-guide.pdf">Review and midterm</a></td>
+  <td></td>
+</tr>
+<tr class="unit">
+  <td rowspan="3">II</td>
+  <td>02/21</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week05/week05.ipynb">Context free grammars, pushdown automata</a></td>
+  <td><a href="../hw/hw3.pdf">HW3</a></td>
+</tr>
+<tr class="unit">
+  <td>02/28</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week06/week06.ipynb">CFG = PDA</a></td>
+  <td><a href="../hw/hw4.pdf">HW4</a></td>
+</tr>
+<tr class="unit">
+  <td>03/07</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week07/week07.ipynb">Non-context-free languages</a></td>
+  <td><a href="../hw/cp2.pdf">CP2</a></td>
+</tr>
+</tr>
+<tr>
+  <td colspan="2"></td> <td>Spring break</td> <td colspan="2"></td>
+</tr>
+<tr class="unit">
+  <td rowspan="3">III</td>
+  <td>03/21</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week08/week08.ipynb">Turing machines</a></td> 
+  <td><a href="../hw/hw5.pdf">HW5</a></td>
+</tr>
+<tr class="unit">
+  <td>03/28</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week09/week09.ipynb">The universal TM and undecidability</a></td>
+  <td><a href="../hw/hw6.pdf">HW6</a></td>
+</tr>
+<tr class="unit">
+  <td>04/04</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week10/week10.ipynb">Reducibility</a> and <a href="../hw/me2-guide.pdf">review</a></td>
+  <td><a href="../hw/cp3.pdf">CP3</a></td>
+</tr>
+<tr>
+  <td></td>
+  <td>04/11<br>Holy Week</td>
+  <td>Midterm (Tuesday) and wrap-up (Thursday)</td>
+  <td></td>
+</tr>
+<tr class="unit">
+  <td rowspan="3">IV</td>
+  <td>04/18</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week11/week11.ipynb">P and NP</a></td>
+  <td><a href="../hw/hw7.pdf">HW7</a></td>
+</tr>
+<tr class="unit">
+  <td>04/25</td>
+  <td><a href="http://nbviewer.ipython.org/github/ND-CSE-30151/Spring-2017/blob/master/notes/week12/week12.ipynb">NP-completeness</a></td>
+  <td><a href="../hw/cp4.pdf">CP4</a></td> 
+</tr>
+<tr class="unit">
+  <td>05/02</td>
+  <td><a href="../hw/fe-guide.pdf">Review</a></td> 
+  <td><a href="../hw/hw8.pdf">HW8</a></td> 
+</tr>
+<tr>
+  <td></td>
+  <td>TBD</td><td>Final exam</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<a name="project"></a>
+<h1>Project</h1>
+
+<div class="row">
+  <div class="six columns">
+
+    <p>Throughout the semester, you will implement some of the ideas you've learned in a series of three text-processing tools.</p>
+
+    <p>In Project 1, you'll implement nondeterministic finite automata (NFA). Nondeterminism (essentially, unbounded parallelism) is one of the core concepts in the course, and implementing it will demonstrate how to simulate nondeterminism on deterministic hardware.</p>
+
+    <p>In Project 2, you'll write a parser for regular expressions and combine it with  NFAs to build a regular expression matcher. Your implementation will be asymptotically <em>much</em> faster than an implementation would be that uses Perl or Python's built-in regular expressions.</p>
+
+    <p>In Project 3, you'll extend the regular expression matcher to a tool that can define transformations from an input string to an output string. Tools of this sort have been used extensively in computational linguistics.</p>
+  </div>
+  <div class="six columns">
+  
+    <p>Finally, in Project 4, your regular expressions will metamorphose into a full-fledged programming language. As a taste, here's a program that factorizes a number written in unary notation:
+
+<pre><code>(:#)111*(:#)111*((:#)111*)*;
+{x*(#1:x#)1*)*};
+((x:1)*#)*
+</code></pre>
+Beautiful, right? Here are some ground rules.
+
+<ul><li>You can work in teams of up to three. Each team member should contribute a roughly equal amount of work.</li>
+<li>You can write in C++ (including all standard libraries except <code>&lt;regex></code>) or Python (including all standard libraries except <code>re</code>). Python is recommended. You can also write in another language with permission from the instructor.</li>
+</ul>
+
+  </div>
+</div>
+
+<a name="policies"></a>
+<h1>Policies</h1>
+
+<div class="row">
+<div class="six columns">
+<h4>Attendance</h4>
+<p>Students are expected to attend all classes. Foreseeable absences should be discussed with the instructor ahead of time.</p>
+
+<h4>Late Work</h4>
+<p>In the case of a serious illness or other excused absence, as defined by university policies, coursework submissions will be accepted late by the same number of days as the excused absence.</p>
+<p>Otherwise, you may submit some problems on time for full credit, and other problems late with a penalty of 10% per day (rounded down to the nearest point). No problem can be submitted more than once.</p>
+
+<h4>Honor Code</h4>
+<p>All work that you submit must be your own; that is, it must represent your own understanding, in your own words. Discussion of problems is encouraged, but writing solutions together or looking at other students' solutions is not allowed. Any print or online resources that you use must be cited properly; use of solution manuals is not allowed.</p>
+
+<h4>Copyright</h4>
+<p>All course materials written by the instructor and published on this website are licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>, which prohibits reuse for commercial purposes.</p>
+<p>All course materials written by the instructor and distributed privately (including through Sakai) should not be redistributed in any way; doing so is a violation of both US copyright law and the University of Notre Dame Honor Code.</p>
+</p>
+
+</div>
+
+<div class="six columns">
+
+<h4>Students with Disabilities</h4>
+<p>Any student who has a documented disability and is registered with Disability Services should speak with the professor as soon as possible regarding accommodations. Students who are not registered should contact the <a href="http://disabilityservices.nd.edu/">Office of Disability Services</a>.</p>
+
+<h4>Classroom Recording</h4>
+
+<p>This semester we will be using an automated classroom recording system. This system allows us to record and distribute lectures to you in a secure environment. You can watch these recordings on your computer, tablet, or smartphone.  The recordings can be accessed within Sakai. Look for the tool labeled "Echo360 ALP" on the left hand side of the course.</p>
+
+<p>Because we will be recording in the classroom, your questions and comments may be recorded. (Video recordings typically only capture the front of the classroom.) If you have any concerns about your voice or image being recorded, please speak to me to determine an alternative means of participating. No content will be shared with individuals outside of your course without your permission, except for faculty and staff that need access for support.</p>
+
+<p>These recordings are jointly copyrighted by the University of Notre Dame and your instructor. Posting them to other websites (including YouTube, Facebook, SnapChat, etc.) or elsewhere without express, written permission may result in disciplinary action and possible civil prosecution.<p>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript" src="retina.js"></script>
+
+</body>
+</html>

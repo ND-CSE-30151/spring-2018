@@ -1,0 +1,163 @@
+html, body {
+  height: 100%;
+}
+
+body { 
+    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #eddbb9;
+    color: #2c1f1a;
+}
+
+a:link { color: #61806a; } 
+a:visited { color: #7d4735; }
+
+a.old { font-size: 12px; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: 'Roboto Slab', serif;
+  color: #7d4735;
+}
+
+.supertitle { font-size: 18px; }
+.supertitle a { text-decoration: none; }
+
+div.fullscreen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.content {
+  padding: 50px;
+}
+
+div#page1 { background-image: url(../images/babbage.jpg); background-size: cover; }
+
+div.overlay {
+  background: rgba(0,0,0,0.4);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: table;
+}
+
+div.titlebox {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+div#page1 h1 {
+  color: white;
+  font-size: 12vmin; line-height: 12vmin;
+  font-weight: 400;
+  text-align: center;  
+  margin: 0px 60px; padding: 0;
+}
+div#page1 h2 {
+  color: white;
+  font-size: 6vmin; line-height: 6vmin;
+  font-weight: 400;
+  text-align: center;  
+  margin: 0; padding: 0;
+}
+div#page1 .arrow-down { display: block; margin: 50px auto 0 auto; }
+
+table.books td { vertical-align: top; }
+table.books img { width: 60px; }
+
+table.invisible, table.invisible td { border: none; }
+
+th, td { border-bottom: 1px solid #7d4735; }
+
+div.bigdisplay {
+  text-align: center;
+  font-size: 24px; line-height: 24px;
+  margin: 24px 0;
+}
+
+div.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #b36d41;
+}
+
+dl.info dt { float: left; padding-right: 0.5em; font-weight: bold; }
+dl.info dd { margin: 0; }
+dl.info p { font-style: italic; margin: 10px 0 0 0; }
+
+h1 { padding-top: 40px; }
+
+table.schedule { 
+  margin: 0 auto; 
+}
+table.schedule th, table.schedule td { 
+  vertical-align: top;
+  border: none; 
+  padding: 5px 10px;
+}
+
+table.schedule tr.unit {
+  background: #e1ccab;
+}
+
+img.photo {
+  max-width: 100%;
+}
+
+div.staff {	
+  font-size: 14px;
+  margin-top: 14px; margin-bottom: 14px;
+}
+
+.menu { display: none; }
+
+code { background-color: #eddbb9; }
+
+@media (min-width: 750px) {
+
+.menuparent {
+  overflow: visible;
+}
+
+.menu {
+  width: 100%;
+  display: block;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  text-align: center;
+  background-color: #e1ccab;
+  /*background-color: #eddbb9;*/
+  z-index: 10;
+  opacity: 0.9;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.menu ul { padding: 0; margin: 0; }
+
+.menu ul li {
+  font-family: 'Roboto Slab', serif;
+  color: #7d4735;
+  display: inline;
+  list-style-type: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.menu a:link, .menu a:visited, .menu a:hover, .menu a:active {
+  text-decoration: none;
+  color: #7d4735;
+}
+
+}
+
