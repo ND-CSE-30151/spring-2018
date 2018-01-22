@@ -1,0 +1,38 @@
+digraph {
+  rankdir=TB;
+  node [fontname=Courier,fontsize=10,shape=box,style=rounded,height=0,width=0,margin="0.055,0.042"];
+  edge [arrowhead=vee,arrowsize=0.5,fontname=Courier,fontsize=9];
+
+  {
+  rank=same;
+  _START[shape=none,label=""];
+  q1r1[label=<(q1,r1)>];
+  q2r1[label=<(q2,r1)>];
+  q3r1[label=<(q3,r1)>];
+  }
+
+  {
+  rank=same;
+  fakestart[shape=none,label=""];
+  q1r2[label=<(q1,r2)>];
+  q2r2[label=<(q2,r2)>];
+  q3r2[label=<(q3,r2)>,peripheries=2];
+  }
+
+  _START -> fakestart[style=invis];
+
+  _START -> q1r1;
+  fakestart -> q1r2[style=invis];
+  q1r1 -> q1r1[label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q1r1 -> q2r2[label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+  q2r1 -> q3r1[label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q2r1 -> q2r2[label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+  q3r1 -> q2r1[label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q3r1 -> q2r2[label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+  q1r2 -> q1r1[label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q1r2 -> q2r2[label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+  q2r2 -> q3r1[label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q2r2 -> q2r2[label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+  q3r2 -> q2r1[constraint=false,label=<<table border="0" cellpadding="1"><tr><td>0</td></tr></table>>];
+  q3r2 -> q2r2[constraint=false,label=<<table border="0" cellpadding="1"><tr><td>1</td></tr></table>>];
+}
