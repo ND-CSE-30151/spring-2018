@@ -15,8 +15,8 @@ digraph {
   rank=same;
   fakestart[shape=none,label=""];
   q1r2[label=<(q1,r2)>];
-  q2r2[label=<(q2,r2)>];
-  q3r2[label=<(q3,r2)>,peripheries=2];
+  q2r2[label=<(q2,r2)>,peripheries=2];
+  q3r2[label=<(q3,r2)>];
   }
 
   _START -> fakestart[style=invis];
